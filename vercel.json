@@ -4,20 +4,12 @@
     {
       "src": "app.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "streamlit.py",
-      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "app.py"
-    },
-    {
       "src": "/(.*)",
-      "dest": "streamlit.py"
+      "dest": "app.py"
     }
   ]
 }
